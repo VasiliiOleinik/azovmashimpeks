@@ -1,0 +1,119 @@
+.main-sections
+	width: 100%
+	display: flex
+	flex-direction: column
+
+	& .first-section 
+		display: flex
+		width: 100%
+		justify-content: center
+		align-items: center
+		margin-bottom: 150px
+
+		&__content
+			display: flex
+			max-width: 60%
+			width: 100%
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			text-align: justify
+			padding: 50px 25px
+			background-color: #f8fafc
+			border-radius: 6px
+			box-shadow: 0px 32px 162px 0px rgba(0,0,0,0.3)
+
+			& h1
+				margin-bottom: 40px
+				position: relative
+
+				&:after
+					content: ""
+					position: absolute
+					top: calc(100% + 15px)
+					width: 150px
+					height: 4px
+					display: block
+					left: 50%
+					transform: translateX(-50%)
+					background: #5489b4
+			& span
+				margin-bottom: 10px
+				color: rgba(75,75,75,0.8)
+	& .second-section
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 150px
+
+		& .title-section
+			text-transform: uppercases
+			font-size: 34px
+			margin-bottom: 70px
+			color: $main
+			position: relative
+
+			&:after
+				content: ""
+				width: 50%
+				height: 3px
+				background: $main
+				display: block
+				position: absolute
+				top: calc(100% + 15px)
+				left: 50%
+				transform: translateX(-50%)
+			
+		& .button
+			width: 150px
+			margin-top: 20px
+
+
+		&__content
+			width: 100%
+			flex-wrap: wrap
+			display: flex
+			justify-content: center
+
+			.production-item
+				width: 70%
+				display: flex
+				margin-bottom: 25px
+				padding: 15px
+				border-radius: 6px 6px 6px 6px
+				box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.3)
+				transition: .3s
+				border: 1px solid transparent
+
+				& .slick-arrow
+					display: none !important
+				
+				&__slider
+					display: flex
+					width: 40%
+
+					& img
+						max-height: 300px
+						height: auto
+						object-fit: cover
+
+				&__text
+					width: calc(100% - 40%)
+					display: flex
+					flex-direction: column
+					padding-left: 30px
+
+				&__name
+					font-size: 24px
+					font-weight: 600
+					margin-bottom: 10px
+				
+				&__name-full
+					font-size: 14px
+					font-style: italic
+					margin-bottom: 10px
+					color: #969696
+				
+				&__descr
+					font-size: 14px
